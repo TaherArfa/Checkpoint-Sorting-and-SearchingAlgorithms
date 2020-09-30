@@ -1,0 +1,27 @@
+ALGORITHM InsertionSort
+
+VAR
+tab[] : array of INTEGER
+
+BEGIN
+
+PROCEDURE InsertionSort(tab[])
+VAR 
+i:INTEGER;
+n= tab.length: INTEGER;
+tmp:INTEGER;
+
+
+FOR i : 0 TO n SETP 1 DO
+tmp := tab[i];
+j:= i;
+
+WHILE (J>0) AND (tab[j-1]>tmp) DO 
+tab[j] := tab[j-1];
+j:=j-1;
+END WHILE
+tab[j]:= tmp;
+END FOR
+END
+
+END
